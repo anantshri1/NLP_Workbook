@@ -27,7 +27,7 @@ The dataset contains Amazon product reviews with a numerical `overall` rating (1
 - Drop non-text columns (vote counts, Wilson lower bound, etc.) before modelling
 
 ### 2. NLP Toolkit (NLTK)
-A custom `preprocess_tweets()` function handles text cleaning:
+A custom `preprocess_tweets()` function handles text cleaning (originally designed for tweets; applied here as a general-purpose text cleaner since the regex patterns are domain-agnostic):
 - Strip retweet markers, URLs, hashtags, and @-mentions using regex
 - Tokenise with NLTK's `TweetTokenizer` (case-folded, handle-stripped)
 - Remove English stopwords and punctuation
@@ -80,6 +80,6 @@ nltk.download('wordnet')
 
 ## Notes
 
-- **Best overall:** Weighted LSTM and weighted DistilBERT are the top performers. DistilBERT benefits from pretraining on general English text; the weighted variant handles class imbalance more robustly than the standard `Trainer`.
+- **Best overall:** Classical BoW models collapse on the neutral class regardless of weighting. Weighted LSTM partially recovers it; Weighted DistilBERT handles it most robustly — illustrating the concrete gain from contextual pretraining on an imbalanced real-world task.
 - The frequency-map feature representation used by the classical models is deliberately simple and interpretable; DistilBERT's superiority illustrates the gap that contextual pretraining closes.
 - Class imbalance is addressed at three levels: `class_weight='balanced'` in tree models, `compute_sample_weight` for XGBoost, and inverse-frequency `CrossEntropyLoss` weights in the neural models.
