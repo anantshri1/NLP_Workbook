@@ -7,5 +7,5 @@ harder tasks.
 
 | Notebook | Task | Key Technique | Best Result |
 |----------|------|---------------|-------------|
-| Sarcasm & Irony | 4-class classification | BoW + LSTM | LSTM best on sarcasm/irony; RF best on figurative |
+| Tweets: Sarcasm & Irony | 4-class classification | BoW + LSTM | LSTM best on sarcasm/irony; RF best on figurative |
 | Amazon Reviews | 3-class sentiment | BoW → LSTM → DistilBERT | Weighted DistilBERT > Weighted LSTM > classical |
