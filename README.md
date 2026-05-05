@@ -1,6 +1,6 @@
 # NLP Workbook
 
-A progression of NLP notebooks built during a career transition from theoretical 
+A progression of Natural Language Processing (NLP) notebooks built during a career transition from theoretical 
 physics to ML/AI research. Each notebook adds a layer of complexity — from 
 lightweight feature engineering to fine-tuned transformers — on progressively 
 harder tasks.
