@@ -9,3 +9,4 @@ harder tasks.
 |----------|------|---------------|-------------|
 | Tweets: Sarcasm & Irony | 4-class classification | BoW + LSTM | LSTM best on sarcasm/irony; RF best on figurative |
 | Amazon Reviews | 3-class sentiment | BoW → LSTM → DistilBERT | Weighted DistilBERT > Weighted LSTM > classical |
+| Mental Health Responses | 7-class sentiment | TF-IDF → LSTM → MentalBERT | MentalBERT > Random Forest > classical > Weighted LSTM |
