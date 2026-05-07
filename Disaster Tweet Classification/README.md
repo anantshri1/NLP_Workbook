@@ -3,7 +3,7 @@
 A full NLP pipeline for binary classification of disaster tweets, benchmarking classical ML,
 GloVe-powered deep learning, and a fine-tuned transformer.
 
-**Dataset:** [NLP Getting Started — Disaster Tweets](https://www.kaggle.com/datasets/vbmokin/nlp-with-disaster-tweets-cleaning-data/data)  
+**Dataset:** [NLP with Disaster Tweets - cleaning data](https://www.kaggle.com/datasets/vbmokin/nlp-with-disaster-tweets-cleaning-data/data)  
 **Task:** Binary classification — real disaster (1) vs not (0)  
 **Class distribution:** 57% No Disaster / 43% Disaster
 
